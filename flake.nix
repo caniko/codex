@@ -7,9 +7,14 @@
       url = "github:oxalica/rust-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    plinth = {
+      url = "git+https://codeberg.org/caniko/plinth.git";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, rust-overlay, ... }:
+  outputs = { self, nixpkgs, rust-overlay, plinth, ... }:
     let
       systems = [
         "x86_64-linux"
@@ -50,6 +55,11 @@
         {
           codex-rs = codex-rs;
           default = codex-rs;
+          website = plinth.lib.${system}.mkProjectSite {
+            pname = "codex-website";
+            domain = "codex-cli.tartanoglu.com";
+            configPath = ./website/plinth-project.toml;
+          };
         }
       );
 

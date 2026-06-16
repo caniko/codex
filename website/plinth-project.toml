@@ -1,0 +1,46 @@
+[site]
+title = "Install using npm"
+description = "<p align=\"center\"><code>npm i -g @openai/codex</code><br />or <code>brew install --cask codex</code></p>"
+base_url = "/"
+footer_note = "Generated from repository metadata by the plinth-project FOSS sweep."
+
+[[nav]]
+label = "Overview"
+href = "#overview"
+
+[[nav]]
+label = "Source"
+href = "git@github.com:caniko/codex.git"
+
+[[footer_links]]
+label = "Source"
+href = "git@github.com:caniko/codex.git"
+
+[[pages]]
+slug = "index"
+title = "Install using npm"
+description = "<p align=\"center\"><code>npm i -g @openai/codex</code><br />or <code>brew install --cask codex</code></p>"
+
+[[pages.sections]]
+type = "hero"
+title = "Install using npm"
+tagline = "<p align=\"center\"><code>npm i -g @openai/codex</code><br />or <code>brew install --cask codex</code></p>"
+subtitle = "<p align=\"center\"><code>npm i -g @openai/codex</code><br />or <code>brew install --cask codex</code></p>"
+
+[[pages.sections.ctas]]
+label = "View source"
+href = "git@github.com:caniko/codex.git"
+primary = true
+
+[[pages.sections]]
+type = "feature_grid"
+id = "overview"
+
+[[pages.sections.features]]
+title = "Nix"
+description = "Project technology detected from repository manifests."
+
+[[pages.sections.features]]
+title = "JavaScript"
+description = "Project technology detected from repository manifests."
+
