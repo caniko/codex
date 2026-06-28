@@ -63,6 +63,12 @@
         }
       );
 
+      apps = forAllSystems (system: {
+        deploy-pages = plinth.lib.${system}.mkDeployPagesApp {
+          domain = "codex-cli.tartanoglu.com";
+        };
+      });
+
       devShells = forAllSystems (system:
         let
           pkgs = import nixpkgs {
