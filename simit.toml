@@ -1,0 +1,7 @@
+[ci]
+
+[ci.pages]
+repo = "caniko/codex"
+canonical_domain = "codex-cli.tartanoglu.com"
+site_output = ".#website"
+source_branch = "main"
